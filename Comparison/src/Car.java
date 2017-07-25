@@ -38,11 +38,12 @@ public class Car implements Comparable<Car> {
     }
 
     public int compareTo(Car c){
-        if(this.carId == c.carId)
+        if(this.price == c.price)
             return 0;
-        else if(this.carId > c.carId) {
+        else if(this.price > c.price) {
             return 1;
         }
         return -1;
     }
+
 }
