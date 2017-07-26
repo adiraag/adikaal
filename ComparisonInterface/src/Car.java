@@ -37,6 +37,15 @@ public class Car implements Comparable<Car> {
         this.price = price;
     }
 
+    @Override
+    public String toString() {
+        return "Car{" +
+                "carId=" + carId +
+                ", brand='" + brand + '\'' +
+                ", price=" + price +
+                '}';
+    }
+
     public int compareTo(Car c){
         if(this.price == c.price)
             return 0;
