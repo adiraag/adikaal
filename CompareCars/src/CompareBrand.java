@@ -5,10 +5,7 @@ import java.util.Comparator;
  */
 public class CompareBrand implements Comparator<Car> {
 
-    public int compare(Car b1, Car b2) {
-
-        return b1.getBrand().compareTo(b2.getBrand());
+    public int compare(Car c1, Car c2) {
+        return c1.getBrand().compareTo(c2.getBrand());
     }
-
-
 }
